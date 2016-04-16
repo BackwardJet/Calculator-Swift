@@ -14,7 +14,7 @@ class ViewController: UIViewController { // UIViewController is the parent class
 
     @IBAction func appendDigit(sender: UIButton) {
         let digit = sender.currentTitle!
-        print("digit = \(digit)")
+        display.text = display.text! + digit
     }
     
     
