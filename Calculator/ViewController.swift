@@ -11,7 +11,11 @@ import UIKit
 class ViewController: UIViewController { // UIViewController is the parent class
     
     @IBOutlet weak var display: UILabel!
-    
+
+    @IBAction func appendDigit(sender: UIButton) {
+        let digit = sender.currentTitle!
+        print("digit = \(digit)")
+    }
     
     
     
