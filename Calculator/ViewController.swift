@@ -26,6 +26,28 @@ class ViewController: UIViewController { // UIViewController is the parent class
 
     }
     
+    @IBAction func operate(sender: UIButton) {
+        let operation = sender.currentTitle!
+        if userIsInTheMiddleOfTypingANumber {
+            enter()
+        }
+        switch operation {
+            case "+":
+                if operandStack.count >= 2 {
+                    displayValue = operandStack.removeLast() + operandStack.removeLast()
+                    enter()
+                }
+//            case "-":
+//            
+//            case "✕":
+//            
+//            case "÷":
+            
+            default: break
+        }
+    }
+    
+    
     var operandStack: Array<Double> = Array<Double>()
     
     @IBAction func enter() {
