@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBD2481C1CCBFD2900103A09 /* CalculatorBrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD2481B1CCBFD2900103A09 /* CalculatorBrian.swift */; };
 		FBE509661CB9FB0C001D6853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE509651CB9FB0C001D6853 /* AppDelegate.swift */; };
 		FBE509681CB9FB0C001D6853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE509671CB9FB0C001D6853 /* ViewController.swift */; };
 		FBE5096B1CB9FB0C001D6853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE509691CB9FB0C001D6853 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FBD2481B1CCBFD2900103A09 /* CalculatorBrian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrian.swift; sourceTree = "<group>"; };
 		FBE509621CB9FB0C001D6853 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE509651CB9FB0C001D6853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBE509671CB9FB0C001D6853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				FBE509651CB9FB0C001D6853 /* AppDelegate.swift */,
 				FBE509671CB9FB0C001D6853 /* ViewController.swift */,
+				FBD2481B1CCBFD2900103A09 /* CalculatorBrian.swift */,
 				FBE509691CB9FB0C001D6853 /* Main.storyboard */,
 				FBE5096C1CB9FB0C001D6853 /* Assets.xcassets */,
 				FBE5096E1CB9FB0C001D6853 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE509681CB9FB0C001D6853 /* ViewController.swift in Sources */,
+				FBD2481C1CCBFD2900103A09 /* CalculatorBrian.swift in Sources */,
 				FBE509661CB9FB0C001D6853 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				FBE509761CB9FB0C001D6853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
