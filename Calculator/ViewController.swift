@@ -26,6 +26,13 @@ class ViewController: UIViewController { // UIViewController is the parent class
 
     }
     
+
+    @IBAction func printCoordinates(sender: UIButton) {
+        // Used for debugging to print button coordinates
+        // print(sender.frame.origin.x, sender.frame.origin.y)
+        
+    }
+    
     @IBAction func operate(sender: UIButton) {
         let operation = sender.currentTitle!
         if userIsInTheMiddleOfTypingANumber {
@@ -60,7 +67,7 @@ class ViewController: UIViewController { // UIViewController is the parent class
     @IBAction func enter() {
         userIsInTheMiddleOfTypingANumber = false
         operandStack.append(displayValue)
-        print("operandStack = \(operandStack)")
+        // print("operandStack = \(operandStack)")
         
     }
     
