@@ -40,7 +40,11 @@ class ViewController: UIViewController { // UIViewController is the parent class
             enter()
         }
         if let operation = sender.currentTitle {
-            
+            if let result = brain.performOperation(operation) {
+                displayValue = result
+            } else {
+                displayValue = 0
+            }
         }
     }
     
@@ -49,9 +53,12 @@ class ViewController: UIViewController { // UIViewController is the parent class
     
     @IBAction func enter() {
         userIsInTheMiddleOfTypingANumber = false
-        operandStack.append(displayValue)
-        // print("operandStack = \(operandStack)")
-        
+        if let result = brain.pushOperand(displayValue) {
+            brain.pushOperand(displayValue)
+        }
+        else { // if result is a nil
+            displayValue = 0
+        }
     }
     
     var displayValue: Double {
