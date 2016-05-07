@@ -52,7 +52,6 @@ class ViewController: UIViewController { // UIViewController is the parent class
 
     
     @IBAction func enter() {
-        print("enter")
         userIsInTheMiddleOfTypingANumber = false
         if let _ = brain.pushOperand(displayValue) {
             // brain.pushOperand(displayValue)
